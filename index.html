@@ -14,7 +14,7 @@
     <div id="fb-root"></div>
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script id="facebook-jssdk" type="text/javascript" src="//connect.facebook.net/en_US/sdk.js"></script>
+    <script async defer crossorigin="anonymous" id="facebook-jssdk" type="text/javascript" src="//connect.facebook.net/en_US/sdk.js"></script>
     <!-- <script id="facebook-jssdk" type="text/javascript" src="//connect.facebook.net/en_US/sdk/debug.js"></script> -->
 
     <script>
@@ -82,7 +82,8 @@
             // /me/permissions para listar as permissoes do usuario
             if (typeof (scope) === "undefined") {
                 scope = {
-                    scope: "public_profile,email,user_friends,user_photos,user_videos,publish_actions,user_likes",
+                    // scope: "public_profile,email,user_friends,user_photos,user_videos,publish_actions,user_likes",
+                    scope: "email,user_friends,user_photos,user_videos,user_likes",
                     auth_type: "rerequest"
                 };
             }
