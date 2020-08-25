@@ -115,7 +115,7 @@
 
                 console.log(JSON.stringify(response));
 
-                var content = "Nome: $name <br>".replace("$name", response.name);
+                var content = "Nombre: $name <br>".replace("$name", response.name);
                 content += "Link: $link <br>".replace("$link", response.link);
                 content += "Username: $login <br>".replace("$login", response.username);
                 content += "ID: $id <br>".replace("$id", response.id);
@@ -223,9 +223,9 @@
 
             var func = function (response) {
                 if (response && response.post_id) {
-                    console.log("Post foi publicado com sucesso.")
+                    console.log("The post was successfully published.")
                 } else {
-                    console.log("Post não foi publicado.");
+                    console.log("The post was not published.");
                 }
             };
 
